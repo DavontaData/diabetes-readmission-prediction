@@ -89,17 +89,19 @@ Final model features included:
 
 Categorical variables were transformed using one-hot encoding before model training.
 
-## Machine Learning Model
+## Final Model Performance
 
-The final prediction model used:
+Logistic Regression was selected as the final model because it had the strongest ROC-AUC and provided interpretable risk estimates.
 
-### Logistic Regression
+| Metric | Result |
+|---|---:|
+| Accuracy | 69.8% |
+| Precision | 18.9% |
+| Recall | 50.4% |
+| F1 Score | 0.275 |
+| ROC-AUC | 0.672 |
 
-Selected because:
-
-* Provides probability-based predictions
-* Offers interpretability
-* Is appropriate for clinical risk prediction applications
+Because 30-day readmissions were relatively uncommon, accuracy was interpreted alongside recall, precision, F1 score, and ROC-AUC. The model identified approximately half of readmissions, but its positive predictions had limited precision.
   
 ## Model Evaluation
 
