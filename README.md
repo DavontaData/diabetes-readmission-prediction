@@ -123,22 +123,19 @@ The application provides:
 * Predicted readmission class
 * Estimated probability of 30-day readmission
 
-## Limitations
+## Modeling Limitations
 
-* The dataset represents historical hospital encounters and may not reflect current healthcare practices.
-* External validation would be required before clinical implementation.
-* Predictions should support, not replace, clinical judgment.
+The dataset exhibited class imbalance, as patients readmitted within 30 days represented a smaller proportion of encounters. This imbalance may have affected the model’s ability to identify readmissions accurately.
+
+Model performance may improve through hyperparameter tuning, threshold adjustment, cross-validation, and additional imbalance-handling techniques.
+
+The dataset represents historical hospital encounters from 1999–2008 and may not reflect current healthcare practices. External validation using an independent healthcare dataset would be necessary before any clinical deployment.
+
+This model is intended for educational and research purposes and should support—not replace—clinical judgment.
 
 ## Future Improvements
 
-Potential future work:
-
-* Validate model using newer healthcare datasets
-* Incorporate clinical notes using NLP
-* Add explainability methods such as SHAP
-* Compare additional machine learning approaches
-* Explore integration into clinical decision-support workflows
-
+Future work could evaluate additional feature-engineering approaches, optimize model hyperparameters, tune the decision threshold, assess calibration, and validate the model using an independent healthcare dataset.
 ## Technologies Used
 
 * Python
