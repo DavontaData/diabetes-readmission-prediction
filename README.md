@@ -17,7 +17,7 @@ The goal was to analyze demographic, clinical, and healthcare utilization charac
 
 ## Research Question
 
-Which demographic, clinical, and healthcare utilization factors are associated with 30-day hospital readmission among diabetic inpatient encounters with the emergency department?
+Which demographic, clinical, and healthcare utilization factors are associated with 30-day hospital readmission among diabetic inpatient encounters with the emergency admission?
 
 ## Supporting Questions
 
