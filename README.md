@@ -1,4 +1,4 @@
-# Diabetes 30-Day Readmission Risk Prediction
+# # Predicting 30-Day Hospital Readmission Risk Among Diabetic Emergency Admission Encounters Using Machine Learning
 
 Machine learning pipeline to predict 30-day hospital readmission risk among patients with diabetes using clinical and healthcare utilization data.
 
@@ -6,15 +6,10 @@ Live Streamlit Application:https://diabetes-readmission-prediction-x7rqhrfmcyz3r
 
 Tableau Public link:
 https://public.tableau.com/views/Diabetes_Readmission_Risk_Dashboard/DiabetesReadmissionRiskDashboard?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link
-## Project Overview
-
-This project develops a machine learning pipeline to identify factors associated with 30-day hospital readmission among diabetic inpatient encounters with emergency admission.
 
 ## Study Objective
 
-The objective of this study was to identify demographic, clinical, and healthcare utilization factors associated with 30-day readmission among diabetic inpatient encounters with emergency admission and develop a machine-learning-ready dataset for predictive modeling.
-
-The goal was to analyze demographic, clinical, and healthcare utilization characteristics associated with readmission risk and construct a machine-learning-ready dataset for predictive modeling.
+The objective of this project was to identify demographic, clinical, and healthcare utilization factors associated with 30-day readmission among diabetic emergency admission encounters and develop a machine learning model to identify patients at increased readmission risk.
 
 ## Research Question
 
@@ -29,7 +24,6 @@ Which demographic, clinical, and healthcare utilization factors are associated w
 3. Which clinical features contribute most to predicting readmission risk?
 
 4. How well do different machine learning models perform in identifying high-risk patients?
-
 
 ## Dataset
 
@@ -68,16 +62,15 @@ The project followed an end-to-end clinical machine learning workflow:
 7. Model evaluation
 8. Clinical interpretation
 9. Streamlit deployment
-10. Feature Engineering
-
+    
 Final model features included:
 
 ### Patient Characteristics
 * Age
-  
+
 ### Healthcare Utilization
 
-* Prior inpatient visits
+* Number of inpatient visits
 * Emergency visits
 * Length of hospital stay
   
@@ -104,6 +97,17 @@ Logistic Regression was selected as the final model because it had the strongest
 
 Because 30-day readmissions were relatively uncommon, accuracy was interpreted alongside recall, precision, F1 score, and ROC-AUC. The model identified approximately half of readmissions, but its positive predictions had limited precision.
 
+## Key Findings
+
+Exploratory analysis identified healthcare utilization as the strongest signal associated with 30-day readmission risk.
+
+Key findings:
+
+- Patients with 30-day readmission had higher healthcare utilization compared with non-readmitted encounters.
+- Readmitted encounters averaged 2.81 hospital encounters compared with 1.51 among non-readmitted encounters.
+- Demographic factors showed smaller differences compared with utilization-related variables.
+- Logistic Regression provided the best balance between interpretability and minority-class detection.
+  
 ## Streamlit Deployment
 
 The trained model was deployed as an interactive Streamlit application.
@@ -137,14 +141,18 @@ This model is intended for educational and research purposes and should supportâ
 ## Future Improvements
 
 Future work could evaluate additional feature-engineering approaches, optimize model hyperparameters, tune the decision threshold, assess calibration, and validate the model using an independent healthcare dataset.
+
 ## Technologies Used
 
 * Python
+* SQL Server
+* SQL
 * Pandas
 * NumPy
 * Scikit-learn
-* SQL
+* XGBoost
 * Jupyter Notebook
+* Tableau Public
 * Streamlit
 * GitHub
   
@@ -172,8 +180,6 @@ The final machine learning model was deployed as an interactive Streamlit applic
 
 ![Streamlit Input](images/streamlit_input.png)
 
-![Streamlit Input](images/streamlit_input.png.2)
-
 ### Prediction Output
 
 ![Prediction Result](images/streamlit_prediction.png)
@@ -189,5 +195,5 @@ Key areas:
 - Hospital length of stay
 - Medication changes
 
-<img width="1359" height="709" alt="Screenshot 2026-07-19 181250" src="https://github.com/user-attachments/assets/0f4a1f89-9529-426d-b2dc-66da440d4999" />
+![Diabetes Readmission Tableau Dashboard](images/diabetes-readmission-tableau-dashboard.png)
 
