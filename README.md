@@ -1,4 +1,4 @@
-# # Predicting 30-Day Hospital Readmission Risk Among Diabetic Emergency Admission Encounters Using Machine Learning
+## Predicting 30-Day Hospital Readmission Risk Among Diabetic Emergency Admission Encounters Using Machine Learning
 
 Machine learning pipeline to predict 30-day hospital readmission risk among patients with diabetes using clinical and healthcare utilization data.
 
